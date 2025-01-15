@@ -9,8 +9,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ededed;
+    --foreground: #0a0a0a;
   }
 }
 
@@ -18,4 +18,55 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  /* Pulsing animation for dots */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+  }
+
+  /* Fade-in animation for text */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* Progress bar animation */
+  @keyframes progressBar {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  /* Add the animations to Tailwind classes */
+  .animate-pulse {
+    animation: pulse 1.5s infinite;
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+
+  .animate-progressBar {
+    animation: progressBar 3s ease-in-out forwards;
+  }
 }
