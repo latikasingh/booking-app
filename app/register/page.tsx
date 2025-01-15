@@ -60,7 +60,7 @@ const Register = () => {
                             type="text"
                             id="name"
                             name="name"
-                            className="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-500"
+                            className="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"
                             required
                         />
                     </div>
@@ -72,7 +72,7 @@ const Register = () => {
                             type="email"
                             id="email"
                             name="email"
-                            className="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-500"
+                            className="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"
                             required
                             autoComplete="false"
                         />
@@ -87,7 +87,7 @@ const Register = () => {
                             type="password"
                             id="password"
                             name="password"
-                            className="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-500"
+                            className="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"
                             required
                             autoComplete="false"
                         />
@@ -100,14 +100,14 @@ const Register = () => {
                             type="password"
                             id="confirmPassword"
                             name="confirmPassword"
-                            className="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-500"
+                            className="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"
                             required
                         />
                     </div>
                 </div>
                 <button
                     type="submit"
-                    className="bg-lime-600 text-white py-2 px-6 rounded-lg hover:bg-lime-700 focus:outline-none focus:ring-2 focus:ring-lime-500 flex items-center justify-center w-full"
+                    className="bg-amber-600 text-white py-2 px-6 rounded-lg hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 flex items-center justify-center w-full"
                 >
                     <FaUserPlus className="mr-2" />
                     Register
@@ -115,7 +115,7 @@ const Register = () => {
             </form>
             <p className="mt-4 text-center text-gray-600">
                 Already have an account?{" "}
-                <Link href="/login" className="text-lime-600 hover:underline">
+                <Link href="/login" className="text-amber-600 hover:underline">
                     Login
                 </Link>
             </p>
